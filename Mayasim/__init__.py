@@ -1,1 +1,6 @@
-from .file_handling import read_fasta
+from Mayasim.file_handling import read_fasta
+
+from Mayasim.protein_digestion import digest_protein_sequence
+from Mayasim.protein_digestion import digest_protein_collection
+from Mayasim.protein_digestion import compute_sequence_coverage
+from Mayasim.protein_digestion import enzyme_cleavage_patterns
