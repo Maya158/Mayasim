@@ -1,4 +1,6 @@
 import re
+import pandas as pd
+
 
 def digest_protein_sequence(protein_seq, cleave_pattern, min_pep_len=5, max_pep_len=30):
     """digests proteins sequence based on a cleavage pattern and filters out peptides smaller than min_pep_len(default is 5) and peptides larger than max_pep_len(default is 30)
@@ -97,3 +99,4 @@ enzyme_cleavage_patterns = {
     'ArgC': r'(?<=R)',
     'Trypsin': r'(?<=[KR])(?!P)',
 }
+
